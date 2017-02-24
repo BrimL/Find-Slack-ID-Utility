@@ -1,11 +1,11 @@
 import os
 from slackclient import SlackClient
 
-#Enter Display Name to Find ID for 
+#Enter Display Name AND tOKEN 
 DISPLAY_NAME = ''
+SLACK_TOKEN = ''
 
-#Enter Slack Client Token
-slack_client = SlackClient('')
+slack_client = SlackClient(SLACK_TOKEN)
 
 if __name__ == "__main__":
    api_call = slack_client.api_call("users.list")
